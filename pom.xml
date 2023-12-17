@@ -73,6 +73,10 @@
             <artifactId>ip2location-java</artifactId>
             <version>8.11.2</version>
         </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
