@@ -4,8 +4,6 @@ import com.skiapi.weatherapicommon.Entity.Locations;
 import com.skiapi.weatherapiservice.exception.LocationNotFoundException;
 import com.skiapi.weatherapiservice.service.LocationsService;
 import jakarta.validation.Valid;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
