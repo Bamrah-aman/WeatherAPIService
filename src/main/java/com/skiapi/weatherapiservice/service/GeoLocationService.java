@@ -13,7 +13,7 @@ import java.io.IOException;
 @Slf4j
 public class GeoLocationService {
 
-    private String DBPathIP2Bin = "ip2locationdb/IP2LOCATION-LITE-DB3.BIN";
+    private String DBPathIP2Bin = "/home/aman/IdeaProjects/WeatherAPIProject/WeatherAPIService/ip2locationdb/IP2LOCATION-LITE-DB3.BIN";
     private IP2Location ip2Location = new IP2Location();
 
     public GeoLocationService() {
