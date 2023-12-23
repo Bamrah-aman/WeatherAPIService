@@ -5,6 +5,7 @@ import com.skiapi.weatherapiservice.exception.LocationNotFoundException;
 import com.skiapi.weatherapiservice.service.LocationsService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequestMapping("/v1/locations")
+@ComponentScan(basePackages = {"com.skiapi.weatherapicommon.Entity"})
 public class LocationsController {
 
 

@@ -13,7 +13,7 @@ import java.io.IOException;
 @Slf4j
 public class GeoLocationService {
 
-    private String DBPathIP2Bin = "/home/aman/IdeaProjects/WeatherAPIProject/WeatherAPIService/ip2locationdb/IP2LOCATION-LITE-DB3.BIN";
+    private String DBPathIP2Bin = "C:\\Learning\\WeatherAPIProject\\WeatherAPIService\\ip2locationdb\\IP2LOCATION-LITE-DB3.BIN";
     private IP2Location ip2Location = new IP2Location();
 
     public GeoLocationService() {
@@ -32,6 +32,7 @@ public class GeoLocationService {
                 throw new GeoLocationException
                         ("Geolocation failed with the status: " + result.getStatus());
             }
+            log.info("Inside geolocation class returning the location behalf of IP");
             return new Locations
                     (result.getCity(), result.getRegion(), result.getCountryLong(),
                             result.getCountryShort());

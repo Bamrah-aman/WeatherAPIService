@@ -9,7 +9,7 @@ import java.io.IOException;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class IP2LocationsTests {
-    private String DBpathBinFile = "/home/aman/IdeaProjects/WeatherAPIProject/WeatherAPIService/ip2locationdb/IP2LOCATION-LITE-DB3.BIN";
+    private String DBpathBinFile = "C:\\Learning\\WeatherAPIProject\\WeatherAPIService\\ip2locationdb\\IP2LOCATION-LITE-DB3.BIN";
     @Test
     public void testInvalidIP() throws IOException {
         IP2Location ip2Location = new IP2Location();

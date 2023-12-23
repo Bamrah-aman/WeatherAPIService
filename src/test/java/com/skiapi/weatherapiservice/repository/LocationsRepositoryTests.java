@@ -80,10 +80,10 @@ public class LocationsRepositoryTests {
         }
         realtimeWeather.setHumidity(10);
         realtimeWeather.setLastUpdated(LocalDateTime.now());
-        realtimeWeather.setPrecipitation(20);
+        realtimeWeather.setPrecipitation(32);
         realtimeWeather.setStatus("Cloudy");
-        realtimeWeather.setTemperature(-2);
-        realtimeWeather.setWindSpeed(5);
+        realtimeWeather.setTemperature(14);
+        realtimeWeather.setWindSpeed(6);
 
         locations.setRealtimeWeather(realtimeWeather);
         Locations updatedLocations = locationsRepository.save(locations);
